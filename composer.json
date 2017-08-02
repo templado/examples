@@ -1,0 +1,21 @@
+{
+  "name" : "templado/examples",
+  "description" : "Examples for Templado",
+  "license" : "BSD-3-Clause",
+  "authors" : [
+    {
+      "name" : "Arne Blankerts",
+      "email" : "arne@blankerts.de",
+      "role" : "Developer"
+    }
+  ],
+  "support" : {
+    "issues" : "https://github.com/templado/example/issues"
+  },
+  "require" : {
+    "php" : "^7.0",
+    "templado/engine": "^2.0"
+  },
+  "minimum-stability" : "stable",
+  "prefer-stable" : true
+}
