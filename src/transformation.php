@@ -1,9 +1,10 @@
 <?php declare(strict_types = 1);
-namespace Templado\Engine;
+namespace Templado\Example;
 
-use Templado\Engine\Example\SampleTransformation;
+use Templado\Engine\FileName;
+use Templado\Engine\Templado;
 
-require __DIR__ . '/../src/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/transformation/SampleTransformation.php';
 
 $page = Templado::loadHtmlFile(

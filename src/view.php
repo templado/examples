@@ -1,14 +1,18 @@
 <?php declare(strict_types = 1);
-namespace Templado\Engine;
+namespace Templado\Example;
 
-require __DIR__ . '/../src/autoload.php';
+use Templado\Engine\FileName;
+use Templado\Engine\Templado;
+use Templado\Engine\TempladoException;
+
+require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/viewmodel/viewmodel.php';
 
 try {
     $page = Templado::loadHtmlFile(
         new FileName(__DIR__ . '/html/viewmodel.xhtml')
     );
-    $page->applyViewModel(new Example\ViewModel());
+    $page->applyViewModel(new ViewModel());
 
     echo $page->asString() . "\n";
 

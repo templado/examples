@@ -1,5 +1,5 @@
 <?php declare(strict_types = 1);
-namespace Templado\Engine\Example;
+namespace Templado\Example;
 
 use DOMNode;
 use Templado\Engine\Selector;

@@ -1,7 +1,12 @@
 <?php declare(strict_types = 1);
-namespace Templado\Engine;
+namespace Templado\Example;
 
-require __DIR__ . '/../src/autoload.php';
+use Templado\Engine\FileName;
+use Templado\Engine\Templado;
+use Templado\Engine\TempladoException;
+use Templado\Mappers\JsonMapper;
+
+require __DIR__ . '/../vendor/autoload.php';
 
 try {
     $page = Templado::loadHtmlFile(
